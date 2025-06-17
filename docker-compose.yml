@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  netflix-clone:
+    build:
+      context: .
+      args:
+        TMDB_V3_API_KEY: your_actual_api_key_here
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+
